@@ -22,8 +22,13 @@ func format(slice []Quiz) {
 
 		if err == nil {
 			switch input {
-			case answer+"\r\n": fmt.Println("Correct!"); score += 1; fmt.Println()
-			default : fmt.Println("Incorrect! Answer is", answer);fmt.Println()
+			case answer + "\r\n":
+				fmt.Println("Correct!")
+				score += 1
+				fmt.Println()
+			default:
+				fmt.Println("Incorrect! Answer is", answer)
+				fmt.Println()
 
 			}
 
