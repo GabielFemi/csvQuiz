@@ -1,6 +1,6 @@
 package quiz
 
-func formatQuestion() {
+func formatQuestion(interface{}) {
 
 }
 
