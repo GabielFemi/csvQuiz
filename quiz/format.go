@@ -24,10 +24,4 @@ func format(slice []Quiz) {
 
 }
 
-func formatAnswer() {
 
-}
-
-func storeInHashMap() {
-
-}
