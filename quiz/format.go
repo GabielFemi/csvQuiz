@@ -23,14 +23,13 @@ func format(slice []Quiz) {
 			newAnswer := strings.TrimPrefix(" ", strings.ToLower(answer))
 			newInput := strings.TrimPrefix(" ", strings.ToLower(input))
 
-			fmt.Println(strings.ToLower(input))
 			if newInput == newAnswer {
 				newScore := incrementScore(score)
 				fmt.Println(newScore)
 			} else {
 				fmt.Println("You missed it!")
-				fmt.Printf("Your answer was: %s", input)
-				fmt.Printf("The real answer is: %s\n", answer)
+				fmt.Printf("Your answer was: %s", newInput)
+				fmt.Printf("The real answer is: %s\n", newAnswer)
 
 			}
 		}
