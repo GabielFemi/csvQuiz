@@ -3,8 +3,10 @@ package quiz
 import "fmt"
 
 func format(slice []Quiz) {
-	question := slice[0]
-	fmt.Print(question)
+	for i := range slice {
+		fmt.Println(slice[i])
+	}
+
 }
 
 func formatAnswer() {

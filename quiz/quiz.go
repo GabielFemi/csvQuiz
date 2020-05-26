@@ -9,8 +9,9 @@ import (
 )
 
 func StartQuiz(csvFile string) {
-	ReadQuizFromCsv(csvFile)
 	log.Println("Started quiz @ ", time.Now())
+	format(ReadQuizFromCsv(csvFile))
+
 }
 func ReadQuizFromCsv(csvFile string) []Quiz {
 	gabby_csv.ReadCsv(csvFile)
