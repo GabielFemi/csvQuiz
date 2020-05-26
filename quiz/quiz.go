@@ -7,13 +7,13 @@ import (
 	"os"
 )
 
-func ReadQuizFromCsv() {
-	csvFile := "quiz.csv"
+func ReadQuizFromCsv(csvFile string) []Quiz {
 	gabby_csv.ReadCsv(csvFile)
-	StartReading(csvFile)
+	quizzes := startReading(csvFile)
+	return quizzes
 }
 
-func StartReading(csvFile string) []Quiz {
+func startReading(csvFile string) []Quiz {
 	file, err := os.Open(csvFile)
 	if err != nil {
 		log.Fatalln(err)
