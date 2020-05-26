@@ -4,9 +4,11 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"strings"
 )
 
 func format(slice []Quiz) {
+	score := 0
 	for quiz := range slice {
 
 		question := slice[quiz].Question
@@ -17,8 +19,20 @@ func format(slice []Quiz) {
 		input, err := inputReader.ReadString('\n')
 
 		if err == nil {
-			fmt.Printf("Your answer was: %s", input)
-			fmt.Printf("The real answer is: %s\n", answer)
+
+			newAnswer := strings.TrimPrefix(" ", strings.ToLower(answer))
+			newInput := strings.TrimPrefix(" ", strings.ToLower(input))
+
+			fmt.Println(strings.ToLower(input))
+			if newInput == newAnswer {
+				newScore := incrementScore(score)
+				fmt.Println(newScore)
+			} else {
+				fmt.Println("You missed it!")
+				fmt.Printf("Your answer was: %s", input)
+				fmt.Printf("The real answer is: %s\n", answer)
+
+			}
 		}
 	}
 

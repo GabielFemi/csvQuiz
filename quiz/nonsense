@@ -1,7 +1,4 @@
 TODO:
-1. Get the question as a slice.
-2. Print the first index as the question
-3. Print the first index as the question
-4. Convert the second index to upper and check if is equal to the field containing the answer
-5. Increase score.
-6. After quiz show the score.
+1. write a method to validate the question and answer
+2. if the answer is correct increment the score
+3. Else return the score
