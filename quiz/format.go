@@ -9,20 +9,21 @@ import (
 
 func format(slice []Quiz) {
 	score := 0
+	fmt.Println("Welcome to csvQuiz written by Akinyosoye Gabriel. :)")
+	fmt.Println()
+
 	for quiz := range slice {
 
 		question := slice[quiz].Question
 		answer := slice[quiz].Answer
-		fmt.Println()
 		fmt.Print(question, " ")
 		inputReader := bufio.NewReader(os.Stdin)
 		input, err := inputReader.ReadString('\n')
 
 		if err == nil {
-
 			switch input {
-			case answer+"\r\n": fmt.Println("Correct!"); score += 1
-			default : fmt.Println("Incorrect! Answer is", answer)
+			case answer+"\r\n": fmt.Println("Correct!"); score += 1; fmt.Println()
+			default : fmt.Println("Incorrect! Answer is", answer);fmt.Println()
 
 			}
 
