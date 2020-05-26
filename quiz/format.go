@@ -3,8 +3,8 @@ package quiz
 import (
 	"bufio"
 	"fmt"
+	"log"
 	"os"
-	"strings"
 )
 
 func format(slice []Quiz) {
@@ -20,20 +20,18 @@ func format(slice []Quiz) {
 
 		if err == nil {
 
-			newAnswer := strings.TrimPrefix(" ", strings.ToLower(answer))
-			newInput := strings.TrimPrefix(" ", strings.ToLower(input))
-
-			if newInput == newAnswer {
-				newScore := incrementScore(score)
-				fmt.Println(newScore)
-			} else {
-				fmt.Println("You missed it!")
-				fmt.Printf("Your answer was: %s", newInput)
-				fmt.Printf("The real answer is: %s\n", newAnswer)
+			switch input {
+			case answer+"\r\n": fmt.Println("Correct!"); score += 1
+			default : fmt.Println("Incorrect! Answer is", answer)
 
 			}
+
+		} else {
+			log.Fatalln(err)
 		}
 	}
+	fmt.Println()
+	fmt.Printf("Your total score is %d/%d", score, len(slice))
 
 }
 

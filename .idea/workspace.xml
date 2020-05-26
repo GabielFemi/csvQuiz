@@ -12,6 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7d8db7c7-7aa9-4e01-b338-ce7463457fad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz.csv" beforeDir="false" afterPath="$PROJECT_DIR$/quiz.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quiz/format.go" beforeDir="false" afterPath="$PROJECT_DIR$/quiz/format.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +21,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="3801" />
+    <option name="totalTimeSeconds" value="6238" />
     <option name="gitIntegration" value="true" />
     <option name="naggedAbout" value="1" />
   </component>
@@ -82,13 +83,17 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="137" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1590491816346" />
-    <state x="207" y="254" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup" timestamp="1590494913578">
+    <state x="367" y="79" width="632" height="610" key="find.popup" timestamp="1590497717226">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="207" y="254" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup/0.0.1366.768@0.0.1366.768" timestamp="1590494913578" />
-    <state x="4" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1590494959051">
+    <state x="367" y="79" width="632" height="610" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1590497717226" />
+    <state x="207" y="254" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup" timestamp="1590496483686">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="4" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1590494959051" />
+    <state x="207" y="254" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup/0.0.1366.768@0.0.1366.768" timestamp="1590496483686" />
+    <state x="4" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1590498494550">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="4" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1590498494550" />
   </component>
 </project>
