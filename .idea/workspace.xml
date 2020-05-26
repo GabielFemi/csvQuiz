@@ -10,14 +10,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d8db7c7-7aa9-4e01-b338-ce7463457fad" name="Default Changelist" comment="" />
+    <list default="true" id="7d8db7c7-7aa9-4e01-b338-ce7463457fad" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/quiz/format.go" beforeDir="false" afterPath="$PROJECT_DIR$/quiz/format.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="2111" />
+    <option name="totalTimeSeconds" value="3451" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
