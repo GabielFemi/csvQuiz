@@ -13,7 +13,7 @@ func ReadQuizFromCsv() {
 	StartReading(csvFile)
 }
 
-func StartReading(csvFile string) {
+func StartReading(csvFile string) []Quiz {
 	file, err := os.Open(csvFile)
 	if err != nil {
 		log.Fatalln(err)
@@ -36,5 +36,8 @@ func StartReading(csvFile string) {
 		// append it into quizzes slice
 		quizzes = append(quizzes, quiz)
 	}
+
+	return quizzes
+
 
 }
