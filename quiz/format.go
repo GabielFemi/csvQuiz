@@ -1,7 +1,10 @@
 package quiz
 
-func formatQuestion(interface{}) {
+import "fmt"
 
+func format(slice []Quiz) {
+	question := slice[0]
+	fmt.Print(question)
 }
 
 func formatAnswer() {

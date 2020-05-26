@@ -5,8 +5,13 @@ import (
 	gabby_csv "github.com/gabielfemi/csvManip/csv"
 	"log"
 	"os"
+	"time"
 )
 
+func StartQuiz(csvFile string) {
+	ReadQuizFromCsv(csvFile)
+	log.Println("Started quiz @ ", time.Now())
+}
 func ReadQuizFromCsv(csvFile string) []Quiz {
 	gabby_csv.ReadCsv(csvFile)
 	quizzes := startReading(csvFile)
