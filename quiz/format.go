@@ -24,4 +24,7 @@ func format(slice []Quiz) {
 
 }
 
-
+func incrementScore(previousScore int) int {
+	newScore := previousScore + 1
+	return newScore
+}
