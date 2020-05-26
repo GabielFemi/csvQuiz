@@ -11,4 +11,3 @@ func formatAnswer() {
 func storeInHashMap() {
 
 }
-
