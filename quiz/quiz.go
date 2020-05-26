@@ -27,7 +27,14 @@ func StartReading(csvFile string) {
 		log.Fatalln(err)
 	}
 
+	var quiz Quiz
+	var quizzes []Quiz
 	for _, field := range csvData {
+		quiz.Question = field[0]
+		quiz.Answer = field[1]
 
+		// append it into quizzes slice
+		quizzes = append(quizzes, quiz)
 	}
+
 }
