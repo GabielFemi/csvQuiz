@@ -39,5 +39,4 @@ func startReading(csvFile string) []Quiz {
 
 	return quizzes
 
-
 }
